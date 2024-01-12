@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <div className="w-screen bg-white ">
       <Collections />
-      <NewArrival products={products}/>
+      <NewArrival products={products} />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 // import { Route, Routes } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeLayout from "./layout/HomeLayout";
-import Homepage from "./pages/Home/HomePage";
+import HomePage from "./pages/Home/HomePage";
 import Malewear from "./pages/menswear/Malewear";
 import Womenswear from "./pages/womenswear/Womenswear";
 import Health_beauty from "./pages/Health_beauty/Health_beauty";
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homepage />,
+        element: <HomePage />,
         loader: productsData,
       },
       {

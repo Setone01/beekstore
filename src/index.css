@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* :root {
+  line-height: 1.5;
+
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 95.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  min-width: 320px;
+  min-height: 100vh;
+  /* font-size: 80%; */
+}
+
+/* Fonts */
+/* @font-face {
+  font-family: GillSans;
+  src: url("../src//assets/fonts/Gill\ Sans.otf");
+}
+.GillSans {
+  font-family: GillSans;
+  font-weight: 100;
+}
+@font-face {
+  font-family: GillSans-light;
+  src: url("../src//assets/fonts/Gill\ Sans\ Light.otf");
+}
+.GillSans-light {
+  font-family: GillSans-light;
+  font-weight: 300;
+}
+@font-face {
+  font-family: GillSans-medium;
+  src: url("../src//assets/fonts/Gill\ Sans\ Medium.otf");
+}
+.GillSans-medium {
+  font-family: GillSans-medium;
+  font-weight: 500;
+}
+@font-face {
+  font-family: GillSans-bold;
+  src: url("../src//assets/fonts/Gill\ Sans\ Bold.otf");
+}
+.GillSans-bold {
+  font-family: GillSans-bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: GillSans-heavy;
+  src: url("../src//assets/fonts/Gill\ Sans\ Heavy.otf");
+}
+.GillSans-heavy {
+  font-family: GillSans-heavy;
+  font-weight: 900;
+} */

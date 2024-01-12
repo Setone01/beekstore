@@ -3,7 +3,7 @@ import Collections from "./collection/Collections";
 import NewArrival from "./newProduct/NewArrival";
 import { useLoaderData } from "react-router-dom";
 
-const Homepage = () => {
+const HomePage = () => {
   const [products, setProducts] = useState([]);
   const data = useLoaderData();
   useEffect(() => {
@@ -17,4 +17,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;

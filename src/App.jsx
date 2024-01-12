@@ -1,7 +1,6 @@
 // import { Route, Routes } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeLayout from "./layout/HomeLayout";
-import HomePage from "./pages/Home/HomePage";
 import Malewear from "./pages/menswear/Malewear";
 import Womenswear from "./pages/womenswear/Womenswear";
 import Health_beauty from "./pages/Health_beauty/Health_beauty";
@@ -11,6 +10,7 @@ import Register from "./auth/Register";
 import Reset from "./auth/Reset";
 import { productsData } from "./api/Api";
 import Product from "./components/productDetails/Product";
+import HomePage from "./pages/Home/HomePage";
 // import AuthLayout from "./layout/AuthLayout";
 
 const router = createBrowserRouter([

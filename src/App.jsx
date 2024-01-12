@@ -10,7 +10,7 @@ import Register from "./auth/Register";
 import Reset from "./auth/Reset";
 import { productsData } from "./api/Api";
 import Product from "./components/productDetails/Product";
-import HomePage from "./pages/Home/HomePage";
+import Home from "./pages/Home/Home";
 // import AuthLayout from "./layout/AuthLayout";
 
 const router = createBrowserRouter([
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage />,
+        element: <Home />,
         loader: productsData,
       },
       {

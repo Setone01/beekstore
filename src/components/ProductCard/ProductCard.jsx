@@ -10,12 +10,12 @@ const ProductCard = ({ product }) => {
   const navigate = useNavigate();
 
   //getting the product id by the title
-  const _id = product.title;
-  const idString = (_id) => {
-    return String(_id).toLowerCase().split(" ").join("");
+  const id = product.title;
+  const idString = (id) => {
+    return String(id).toLowerCase().split(" ").join("");
   };
   //in getting all the id, i made rootId which will take idString and the _id
-  const rootId = idString(_id);
+  const rootId = idString(id);
 
   const handleDetails = () => {
     navigate(`/product/${rootId}`, {
@@ -49,7 +49,7 @@ const ProductCard = ({ product }) => {
               onClick={() => {
                 dispatch(
                   addToCart({
-                    _id: product._id,
+                    id: product.id,
                     title: product.title,
                     image: product.image,
                     price: product.price,

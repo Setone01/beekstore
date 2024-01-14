@@ -11,14 +11,13 @@ export const prepstoreSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const item = state.productData.find(
-        (item) => item._id === action.payload._id
+        (item) => item.id === action.payload.id
       );
-
       if (item) {
         item.quantity += action.payload.quantity;
-      } else {
-        state.productData.push(action.payload);
-      }
+      }else (
+        state.productData.push(action.payload)
+      )
     },
   },
 });

@@ -15,7 +15,7 @@ const Nav = () => {
       <div className="bg-white w-screen h-[5rem] flex justify-center items-center border-b-[1.2px] z-50 fixed top-0">
         <div className="w-[90vw] mx-auto flex items-center justify-between ">
           <div className="">
-            <h3 className="text-black text-xl font-black">
+            <h3 className="text-black text-xl font-bold">
               <Link to={"/"}>Beekstore</Link>
             </h3>
           </div>

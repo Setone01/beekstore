@@ -29,11 +29,12 @@ const ProductCard = ({ product }) => {
       <div className="w-full group flex items-center flex-col pb-3 bg-slate-100 rounded-md shadow-md overflow-hidden">
         <div
           onClick={handleDetails}
-          className="w-full h-[10rem] cursor-pointer bg-slate-300  overflow-hidden"
+          className="w-full h-[12rem]  cursor-pointer bg-slate-300  overflow-hidden"
         >
           <img
             className="w-full h-full object-fill group-hover:scale-110 duration-500"
             src={product.image}
+            // width={70} height={70}
             alt="productImg"
           />
         </div>

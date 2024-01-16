@@ -11,6 +11,7 @@ import Reset from "./auth/Reset";
 import { productsData } from "./api/Api";
 import Product from "./components/productDetails/Product";
 import Home from "./pages/Home/Home";
+import Cart from "./pages/Cart/Cart";
 // import AuthLayout from "./layout/AuthLayout";
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/product/:id",
         element: <Product />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
       {
         path: "/mens_fashion",
@@ -79,7 +84,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="font-bodyFont">
+    <div className="font-bodyFont bg-blue-50">
       <RouterProvider router={router} />
     </div>
   );

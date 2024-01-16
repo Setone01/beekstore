@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addToCart } from "../../redux/prepstoreSlice";
+import { addToCart } from "../../redux/beekstoreSlice";
 
 const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
@@ -32,13 +32,13 @@ const ProductCard = ({ product }) => {
           className="w-full h-[10rem] cursor-pointer bg-slate-300  overflow-hidden"
         >
           <img
-            className="w-full h-full object-cover group-hover:scale-110 duration-500"
+            className="w-full h-full object-fill group-hover:scale-110 duration-500"
             src={product.image}
             alt="productImg"
           />
         </div>
         <div className="w-full px-4 pt-3">
-          <h5 className="text-black text-[14px] font-medium capitalize line-clamp-1">
+          <h5 className="text-slate-900 text-[14px] font-medium capitalize line-clamp-1">
             {product.title}
           </h5>
           <span className=" text-slate-500 text-[12px] font-semibold">
@@ -61,7 +61,7 @@ const ProductCard = ({ product }) => {
               className=" w-full flex justify-center items-center text-[14px] hover:bg-slate-800 hover:text-slate-300 text-black font-medium border-[1.33px] py-2 rounded-md border-black "
             >
               Add to Cart
-              <span className="ml-2">
+              <span className="ml-2 opacity-70">
                 <svg
                   className="w-4 h-4 "
                   aria-hidden="true"

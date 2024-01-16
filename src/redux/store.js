@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import prepstoreReducer from "./prepstoreSlice";
+import beekstoreReducer from "./beekstoreSlice";
 
 export const store = configureStore({
   reducer: {
-    prepstore: prepstoreReducer,
+    beekstore: beekstoreReducer,
   },
 });

@@ -4,7 +4,7 @@ import { navList } from "../../assets/Data";
 import { useSelector } from "react-redux";
 
 const Nav = () => {
-  const productData = useSelector((state) => state.prepstore.productData);
+  const productData = useSelector((state) => state.beekstore.productData);
   const navLinkStyles = ({ isActive }) => {
     return {
       borderBottom: isActive ? "1.2px solid #000000" : "",
@@ -15,14 +15,14 @@ const Nav = () => {
       <div className="bg-white w-screen h-[5rem] flex justify-center items-center border-b-[1.2px] z-50 fixed top-0">
         <div className="w-[90vw] mx-auto flex items-center justify-between ">
           <div className="">
-            <h3 className="text-black text-xl font-bold">
+            <h3 className="text-slate-900 text-xl font-bold">
               <Link to={"/"}>Beekstore</Link>
             </h3>
           </div>
           <div className="">
             <ul className="flex justify-between items-center gap-8 ">
               {navList.map((item) => (
-                <li className="text-black text-base font-medium " key={item.id}>
+                <li className="text-slate-900 text-base font-medium " key={item.id}>
                   <NavLink style={navLinkStyles} to={item.path}>
                     {item.title}
                   </NavLink>
@@ -31,7 +31,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className="">
-            <ul className="flex justify-center items-center gap-8">
+            <ul className="flex justify-center text-slate-900 items-center gap-8">
               <li>
                 <Link>
                   <svg
@@ -57,9 +57,9 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="relative">
-                <Link>
+                <Link to={'/cart'}>
                   <svg
-                    class="w-6 h-6 text-black"
+                    className="w-6 h-6 text-slate-900"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -73,12 +73,12 @@ const Nav = () => {
                       d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z"
                     />
                   </svg>
+                  <div className="w-4 h-4 bg-red-600 flex justify-center items-center text-white text-xs font-semibold rounded-full -top-1 translate-x-4 absolute">
+                    <span className="flex items-center justify-center">
+                      {productData.length > 0 ? productData.length : 0}
+                    </span>
+                  </div>
                 </Link>
-                <div className="w-4 h-4 bg-red-600 flex justify-center items-center text-white text-xs font-semibold rounded-full -top-1 translate-x-4 absolute">
-                  <span className="flex items-center justify-center">
-                    {productData.length}
-                  </span>
-                </div>
               </li>
             </ul>
           </div>

@@ -57,7 +57,7 @@ const Product = () => {
               </div>
             </div>
             <div className="">
-              <button className="flex justify-center items-center bg-slate-800 text-[14px] px-6 hover:bg-slate-800/60 text-white font-medium border-[1.33px] py-3 rounded-md border-black ">
+              <button className="flex justify-center items-center bg-slate-800 text-[14px] px-6 hover:bg-slate-800/60 text-white font-medium  py-3 rounded-md ">
                 Add to Cart
                 <span className="ml-2">
                   <svg

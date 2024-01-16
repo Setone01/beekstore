@@ -61,24 +61,6 @@ const router = createBrowserRouter([
         element: <Reset />,
       },
     ],
-    // {
-    //   path: "/auth",
-    //   element: <AuthLayout/>,
-    //   children: [
-    //     {
-    //       path: "/login",
-    //       element: <Login />,
-    //     },
-    //     {
-    //       path: "/register",
-    //       element: <Register />,
-    //     },
-    //     {
-    //       path: "/auth_reset",
-    //       element: <Reset />,
-    //     },
-    //   ]
-    // }
   },
 ]);
 

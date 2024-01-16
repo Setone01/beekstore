@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 
 const Nav = () => {
   const productData = useSelector((state) => state.beekstore.productData);
+  console.log(productData);
   const navLinkStyles = ({ isActive }) => {
     return {
       borderBottom: isActive ? "1.2px solid #000000" : "",
@@ -22,7 +23,10 @@ const Nav = () => {
           <div className="">
             <ul className="flex justify-between items-center gap-8 ">
               {navList.map((item) => (
-                <li className="text-slate-900 text-base font-medium " key={item.id}>
+                <li
+                  className="text-slate-900 text-base font-medium "
+                  key={item.id}
+                >
                   <NavLink style={navLinkStyles} to={item.path}>
                     {item.title}
                   </NavLink>
@@ -57,7 +61,7 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="relative">
-                <Link to={'/cart'}>
+                <Link to={"/cart"}>
                   <svg
                     className="w-6 h-6 text-slate-900"
                     aria-hidden="true"

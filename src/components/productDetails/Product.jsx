@@ -15,21 +15,21 @@ const Product = () => {
   }, []);
   return (
     <div>
-      <div className="max-w-[90vw] mx-auto my-10 flex gap-10 z-20">
-        <div className="w-2/5 bg-slate-400 relative">
+      <div className="max-w-[90vw] mx-auto xs:my-5 lg:my-10 flex xs:flex-col lg:flex-row gap-10 z-20">
+        <div className="xs:w-full lg:w-2/5 relative">
           <img
-            className="w-full h-[520px] object-cover"
+            className="w-full xs:h-[230px] lg:h-[520px] object-contain"
             src={details.image}
             alt="productImg"
           />
         </div>
-        <div className="w-3/5 flex flex-col justify-center gap-10 pl-16">
+        <div className="xs:w-full lg:w-3/5 flex flex-col justify-center xs:gap-4 lg:gap-10 xs:pl-0 lg:pl-16">
           <div className="">
-            <h2 className=" text-slate-900 text-[20px] font-semibold ">
+            <h2 className=" text-slate-900 xs:text-[17.7px] lg:text-[20px] font-semibold mb-2">
               {details.title}
             </h2>
             <div className="">
-              <p className=" text-slate-400 text-[16px] font-semibold">
+              <p className=" text-slate-400 text-[17px] font-semibold">
                 ${details.price}
               </p>
             </div>
@@ -49,7 +49,7 @@ const Product = () => {
           <p className=" text-slate-700 text-[14px] font-medium">
             {details.description}
           </p>
-          <div className=" flex items-center gap-8">
+          <div className=" flex lg:items-center xs:flex-col lg:flex-row xs:gap-4 gap-8">
             <div className=" w-48 flex items-center justify-between border-[1.3px] border-slate-600 p-2.5 rounded-md">
               <p className="text-sm font-medium">Quantity</p>
               <div className="flex items-center gap-4 font-medium text-slate-600">

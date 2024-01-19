@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   deleteItem,
   quantityDecrement,
@@ -11,9 +11,14 @@ import {
 import emptyCart from "../../assets/img/empty-cart.png";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.beekstore.productData);
   const [totalPrice, setTotalPrice] = useState("");
+
+  const handleClick = () =>{
+    navigate(`/`)
+  }
 
   useEffect(() => {
     let Total = 0;
@@ -24,10 +29,10 @@ const Cart = () => {
     setTotalPrice(Total.toFixed(2));
   }, [productData]);
   return (
-    <div className="w-sreen bg-slate-100">
+    <div className="w-sreen bg-white">
       {productData.length > 0 ? (
         <div className="w-[90vw] mx-auto py-10 flex justify-center flex-col gap-3">
-          <div className="mb-3">
+          <div className="w-full mb-3">
             <Link>
               <h6 className="flex items-center text-[14px] font-normal text-slate-400 hover:text-blue-950 opacity-80">
                 <span className="mr-2">
@@ -47,7 +52,7 @@ const Cart = () => {
               </h6>
             </Link>
           </div>
-          <div className="w-full grid grid-cols-5 gap-8">
+          <div className="w-full grid xs:grid-cols-1 lg:grid-cols-5 gap-8">
             <div className="w-full bg-blue-50 rounded-md shadow-md col-span-4">
               <div className="w-full border-b-[1.3px] border-slate-400 p-2">
                 <h4 className="text-[18px] font-bold text-slate-800 opacity-90">
@@ -143,7 +148,7 @@ const Cart = () => {
                 </button>
               </div>
             </div>
-            <div className="w-full h-60 col-span-1 bg-blue-50 shadow-md rounded-md">
+            <div className="w-full h-60  bg-blue-50 shadow-md rounded-md">
               <div className="w-full flex items-center px-2  py-2.5 border-b-[1.3px] border-slate-500">
                 <h2 className="text-[15px] text-slate-800 font-semibold text-left">
                   Cart Summary
@@ -176,15 +181,15 @@ const Cart = () => {
               <img src={emptyCart} width={70} height={70} alt="EmptyCart" />
             </div>
             <div className=" flex justify-center items-center flex-col">
-              <h2 className=" text-xl font-bold text-slate-900 mb-2">
-                Your Cart is currently empty
+              <h2 className=" xs:text-[16px] lg:text-xl font-semibold text-slate-900 mb-1 capitalize">
+                Empty cart
               </h2>
-              <p className=" w-[60%] text-[14px] font-medium text-slate-600 text-center">
+              <p className=" xs:w-[85%] lg:w-[60%] xs:text-[13px] lg:text-[14px] font-medium text-slate-600 text-center">
                 Add some produts to your shopping cart. You will find some
                 interesting products on our shopping page.
               </p>
               <div className="mt-6">
-                <button className="bg-gradient-to-tl from-slate-800 to-slate-900 text-slate-200 font-medium text-[14px] px-4 py-2.5 flex items-center rounded-md">
+                <button onClick={handleClick} className="bg-gradient-to-tl from-slate-800 to-slate-900 text-slate-200 font-medium xs:text-[13px] lg:text-[14px] px-4 py-2.5 flex items-center rounded-md">
                   <span className="mr-2">
                     <svg
                       fill="currentColor"

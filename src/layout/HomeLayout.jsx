@@ -5,12 +5,10 @@ import Footer from "../components/Footer/Footer";
 
 const HomeLayout = () => {
   return (
-    <div className="max-w-screen  min-h-screen flex flex-col overflow-x-hidden">
+    <div className="max-w-screen  min-h-screen flex flex-col">
       <Nav />
       <ScrollRestoration />
-      <main className="mt-[5rem]">
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </div>
   );

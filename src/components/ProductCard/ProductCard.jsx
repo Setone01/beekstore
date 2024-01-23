@@ -29,17 +29,17 @@ const ProductCard = ({ product }) => {
       <div className="w-full group flex items-center flex-col pb-3 bg-slate-100 rounded-md shadow-md overflow-hidden">
         <div
           onClick={handleDetails}
-          className="w-full h-[12rem]  cursor-pointer bg-slate-300  overflow-hidden"
+          className="w-full xs:h-[9rem] lg:h-[13.5rem]  cursor-pointer bg-white overflow-hidden"
         >
           <img
-            className="w-full h-full object-fill group-hover:scale-110 duration-500"
+            className="w-full h-full p-2 object-contain group-hover:scale-110 duration-500"
             src={product.image}
             // width={70} height={70}
             alt="productImg"
           />
         </div>
-        <div className="w-full px-4 pt-3">
-          <h5 className="text-slate-900 text-[14px] font-medium capitalize line-clamp-1">
+        <div className="w-full flex flex-col px-4 pt-3">
+          <h5 className="text-slate-900 xs:text-[12px] lg:text-[14px] xs:font-semibold lg:font-medium capitalize line-clamp-1">
             {product.title}
           </h5>
           <span className=" text-slate-500 text-[12px] font-semibold">
@@ -59,7 +59,7 @@ const ProductCard = ({ product }) => {
                   })
                 );
               }}
-              className=" w-full flex justify-center items-center text-[14px] hover:bg-slate-800 hover:text-slate-300 text-black font-medium border-[1.33px] py-2 rounded-md border-black "
+              className=" w-full flex justify-center items-center xs:text-[12px] lg:text-[14px]  hover:bg-slate-800 hover:text-slate-300 text-slate-900 font-medium border-[1.33px] py-2 rounded-md border-black "
             >
               Add to Cart
               <span className="ml-2 opacity-70">

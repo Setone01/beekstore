@@ -4,69 +4,67 @@ import loginBG from "../assets/img/login bg.jpg";
 
 const Login = () => {
   return (
-    <div className="screen h-[calc(100vh-5rem)] bg-slate-200">
-      <div className="w-[85vw] h-full mx-auto flex justify-center z-20">
-        <div className="w-full flex-1 bg-blue-400">
+    <div className="screen h-[calc(90dvh-5rem)] bg-slate-200">
+      <div className=" w-[85vw] h-full mx-auto flex justify-center z-20">
+        <div className=" xs:hidden lg:block w-full flex-1 bg-blue-400">
           <img className="w-full h-full object-cover" src={loginBG} alt="" />
         </div>
-        <div className="flex-1 items-center pt-16">
-          <div className="pl-28">
-          <div className="flex justify-center flex-col mb-7">
-            <h2 className="text-3xl text-black font-semibold mb-2">
-              Login
-            </h2>
-            <p className="text-sm text-slate-400 font-medium">
-              Glad to see you again <span>🖐</span>
-            </p>
-            <span className="text-sm text-slate-400 font-medium">
-              Log in to your account below
-            </span>
-          </div>
-          <div className="w-full flex justify-items-start">
-            <form
-              action=""
-              className="w-full flex justify-start items-center flex-col gap-4"
-            >
-              <div className="w-full flex justify-center flex-col">
-                <label className="text-[13px] font-medium text-slate-400">
-                  Email:
-                </label>
-                <input
-                  className="w-full border-[1.3px] border-slate-300 text-sm font-medium outline-none rounded-md px-4 py-2.5"
-                  type="email"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div className="w-full flex justify-center flex-col">
-                <label className="text-[13px] font-medium text-slate-400">
-                  Password:
-                </label>
-                <input
-                  className="w-full border-[1.3px] border-slate-300 text-sm font-medium outline-none rounded-md px-4 py-2.5"
-                  type="password"
-                  placeholder="Password"
-                />
-                <div className="w-full flex justify-end mt-2 mb-5 text-xs text-slate-900 hover:text-slate-900/40 font-medium">
-                  <Link to={"/"}>Forgot Password?</Link>
-                </div>
-                <button className=" bg-slate-800 hover:bg-slate-800/60  text-white font-semibold py-2.5 rounded-md">
-                  Log in
-                </button>
-              </div>
-            </form>
-          </div>
-          <div className="mt-4">
-            <p className="text-sm font-medium text-slate-500">
-              Don't have an account?
-              <Link
-                className=" text-slate-800 hover:underline"
-                to={"/register"}
+        <div className="w-full flex-1 flex justify-center items-center">
+          <div className="w-full flex justify-center flex-col lg:pl-28">
+            <div className="flex justify-center flex-col mb-7">
+              <h2 className="lg:text-3xl xs:text-[24px] text-black font-semibold mb-2">Login</h2>
+              <p className=" xs:text-[13px] lg:text-[14px] text-slate-500 xs:font-normal lg:font-medium">
+                Glad to see you again <span>🖐</span>
+              </p>
+              <span className="xs:text-[13px] lg:text-[14px] text-slate-500 xs:font-normal lg:font-medium">
+                Log in to your account below
+              </span>
+            </div>
+            <div className="w-full flex justify-items-start">
+              <form
+                action=""
+                className="w-full flex justify-start items-center flex-col gap-3"
               >
-                {" "}
-                Sign up
-              </Link>
-            </p>
-          </div>
+                <div className="w-full flex justify-center flex-col">
+                  <label className="xs:text-[13px] lg:text-[14px] font-semibold text-slate-400">
+                    Email:
+                  </label>
+                  <input
+                    className="w-full border-[1.3px] border-slate-300 xs:text-[13px] lg:text-[14px] font-medium outline-none rounded-md px-4 py-3"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div className="w-full flex justify-center flex-col">
+                  <label className="xs:text-[13px] lg:text-[14px] font-semibold text-slate-400">
+                    Password:
+                  </label>
+                  <input
+                    className="w-full border-[1.3px] border-slate-300 xs:text-[13px] lg:text-[14px] font-medium outline-none rounded-md px-4 py-3"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <div className="w-full flex justify-end mt-2 mb-5 ">
+                    <Link className=" xs:text-[13px] lg:text-[14px] text-slate-900 hover:text-slate-900/40 font-medium" to={"/"}>Forgot Password?</Link>
+                  </div>
+                  <button className=" bg-slate-900 hover:bg-slate-900/80 xs:text-[15px] lg:text-[18px] text-white font-semibold py-2.5 rounded-md">
+                    Log in
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div className="mt-4">
+              <p className="xs:text-[13px] lg:text-sm font-medium text-slate-500">
+                Don't have an account?
+                <Link
+                  className=" text-slate-800 hover:underline"
+                  to={"/register"}
+                >
+                  {" "}
+                  Sign up
+                </Link>
+              </p>
+            </div>
           </div>
           {/* <div className="w-full mt-6">
             <div className="w-full flex items-center justify-center mb-5">

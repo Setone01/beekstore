@@ -24,9 +24,9 @@ const Card = () => {
         </p>
       </div>
       <div className="w-full flex justify-center items-center flex-col">
-        <div className="w-full flex justify-between pb-2 border-b-[1.3px]">
+        <div className="w-full flex justify-between pb-2 border-slate-700 border-b-[1.3px]">
           <div className="w-full">
-            <select className="w-28 bg-white text-sm font-medium border-none outline-none ">
+            <select className="w-28 bg-inherit text-sm font-medium border-none outline-none ">
               <option disabled selected>
                 Filter
               </option>
@@ -38,7 +38,7 @@ const Card = () => {
             </select>
           </div>
           <div className="w-full flex justify-end">
-            <select className=" w-28 bg-white text-sm font-medium border-none outline-none rounded-md">
+            <select className=" w-28 bg-inherit text-sm font-medium border-none outline-none rounded-md">
               <option disabled selected>
                 Sort by:
               </option>

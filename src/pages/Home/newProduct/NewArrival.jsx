@@ -10,11 +10,15 @@ const NewArrival = ({ products }) => {
             new arrival
           </h4>
         </div>
-        <div className="w-full grid grid-cols-5 gap-8">
-          {products.map((item) => (
-            <ProductCard key={item.id} product={item} />
-          ))}
-        </div>
+        {products ? (
+          <div className="w-full grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lgl:grid-cols-5 xs:gap-4 lg:gap-8">
+            {products.map((item) => (
+              <ProductCard key={item.id} product={item} />
+            ))}
+          </div>
+        ) : (
+          <div className="w-full h-[60vh]"> Loading</div>
+        )}
       </div>
     </div>
   );

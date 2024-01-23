@@ -81,16 +81,16 @@ export const collectionList = [
     title: "women shoe",
     path: "/womens-shoe"
   },
-  {
-    id: 5,
-    image: menjacket,
-    title: "men's jacket, coat and sweater",
-    path: "/mens-jacket"
-  },
-  {
-    id: 6,
-    image: womenjacket,
-    title: "women's jacket, coat and sweater",
-    path: "/womens-jacket"
-  },
+  // {
+  //   id: 5,
+  //   image: menjacket,
+  //   title: "men's jacket, coat and sweater",
+  //   path: "/mens-jacket"
+  // },
+  // {
+  //   id: 6,
+  //   image: womenjacket,
+  //   title: "women's jacket, coat and sweater",
+  //   path: "/womens-jacket"
+  // },
 ];

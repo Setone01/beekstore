@@ -3,7 +3,7 @@ import Card from '../../components/UnisexCard/Card'
 
 const Malewear = () => {
   return (
-    <div className='w-screen bg-white py-10'>
+    <div className='w-screen h-auto py-10'>
     <Card/>
     </div>
   )

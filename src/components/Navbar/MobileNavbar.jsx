@@ -10,9 +10,9 @@ const MobileNavbar = ({ setMenuOpen }) => {
   };
 
   return (
-    <div className="xs:block lg:hidden w-screen h-[calc(100dvh-5rem)] ease-in-out fixed left-0 transition delay-500 duration-400 z-20">
+    <div className="xs:block lg:hidden w-screen h-[calc(100dvh-5rem)] fixed left-0 translate-x-0 ease-in-out duration-200 z-20">
       <div className="flex justify-between">
-        <div className="w-2/3 h-screen  bg-blue-100 px-6 pt-6">
+        <div className="w-2/3 h-screen bg-blue-100 px-6 pt-6">
           <div className="w-full mb-5">
             <div className="relative block md:hidden">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">

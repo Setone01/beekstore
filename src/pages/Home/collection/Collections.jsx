@@ -10,7 +10,12 @@ const Collections = () => {
       </h3>
       <div className="w-full grid xs:grid-cols-2 lg:grid-cols-4 items-center justify-center xs:gap-3 lg:gap-5">
         {collectionList.map((item) => (
-          <Card key={item.id} image={item.image} title={item.title} path={item.path}/>
+          <Card
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            path={item.path}
+          />
         ))}
       </div>
     </div>

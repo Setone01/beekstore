@@ -211,7 +211,7 @@ const Footer = () => {
                   </svg>
                 </button>
               </div>
-            </form>
+            </form> 
           </div>
         </div>
         <div className="w-[90%] mx-auto flex items-center justify-center flex-col my-2">

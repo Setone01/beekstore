@@ -8,7 +8,7 @@ const HomeLayout = () => {
     <div className="max-w-screen  min-h-screen flex flex-col">
       <Nav />
       <ScrollRestoration />
-      <main className="mt-[4.2rem] top-0">
+      <main className="mt-[4.2rem] top-0 overflow-x-hidden">
         <Outlet />
       </main>
       <Footer />

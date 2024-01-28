@@ -4,7 +4,7 @@ import { footerLink } from "../../assets/Data";
 
 const Footer = () => {
   return (
-    <div className="w-screen max-h-max bg-slate-900 pt-8 pb-4 mt-auto">
+    <div className=" max-w-screen max-h-max bg-slate-900 pt-10 pb-4 mt-auto">
       <div className="w-[90%] mx-auto flex justify-center items-center flex-col">
         <div className="w-full flex justify-between xs:flex-wrap lgl:flex-nowrap gap-8 mb-3">
           <div className="w-full lg:basis-[30%]">
